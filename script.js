@@ -11,7 +11,7 @@ let key = document.querySelector("#options").addEventListener("click", (event) =
     let simbol = event.target.id;
     controlDeInputs(simbol)
 })
-
+// #0808FF  #F3ECD0
 function controlDeInputs(input) {
 
     //Numeros
