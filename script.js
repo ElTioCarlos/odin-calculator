@@ -9,10 +9,10 @@ let waitNum2 = true
 
 let key = document.querySelector("#options").addEventListener("click", (event) => {
     let simbol = event.target.id;
-    controlDeInputs(simbol)
+    inputs(simbol)
 })
-// #0808FF  #F3ECD0
-function controlDeInputs(input) {
+
+function inputs(input) {
 
     //Numeros
     if (search(input, numeros)) {
@@ -26,7 +26,7 @@ function controlDeInputs(input) {
     }
 
     //Operadores
-    if (search(input, operadores)) {
+    if ((search(input, operadores) && num1 != "")) {
         
         if (waitNum2) {
             waitNum2 = false
